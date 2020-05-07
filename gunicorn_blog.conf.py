@@ -219,8 +219,8 @@ access_log_format = '%(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(D)s %(b)s "%(f)s" "
 #
 
 """
-gunicorn 启动django  命令  gunicorn --config gunicorn.conf.py www.wsgi:application
-1.www.wsgi -> www是wsgi.py 的上级目录 
+gunicorn 启动django  命令  gunicorn --config gunicorn.conf.py django_blog.wsgi:application
+1.django_blog.wsgi -> django_blog是wsgi.py 的上级目录 
 2.application 是固定的
 """
 #
