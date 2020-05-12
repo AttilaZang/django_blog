@@ -1,4 +1,4 @@
-﻿/**
+/**
  * 今日诗词V2 JS-SDK 1.2.2
  * 今日诗词API 是一个可以免费调用的诗词接口：https://www.jinrishici.com
  */
