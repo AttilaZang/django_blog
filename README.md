@@ -1,32 +1,8 @@
 ## 示例
-[![](https://img.shields.io/badge/我的个人博客-http://bgods.cn/-green.svg)](http://bgods.cn/)
 
+### 1、修改配置
 
-## 说明
-
-本站是基于的Hexo博客主题 [Material X](https://xaoxuu.com/projects/#Material-X) ，改用 Python3.6.3+Django2.17编写的；
-后台集成Markdown编辑器 [mdeditor](https://pandao.github.io/editor.md/)，前端代码高亮使用的是highlight.js插件。
-
-[![](doc/admin-post-add.png)](doc/admin-post-add.png)
-[![](doc/admin-post-view.png)](doc/admin-post-view.png)
-
-
-## 使用方法
-
-由于本博客使用Python3.6.3+Django2.17编写，为了避免出现问题，建议使用相同配置环境，使用虚拟环境，这里以本地环境为例。
-有任何疑问，或建议可以到[我的博客](http://bgods.cn/)下留言
-
-### 1、下载源代码到本地
-
-1. 使用git命令下载
-```bash
-git clone https://github.com/Bgods/Django-blog-material-x.git
-```
-2. 或者点击[下载到本地](https://github.com/Bgods/Django-blog-material-x/archive/master.zip)
-
-### 2、修改配置
-
-修改 www/www/settings.py 文件
+修改 settings.py 文件
 ```python
 # 站点配置
 SITE_CONFIGS = {
@@ -75,18 +51,9 @@ SITE_CONFIGS = {
     </script>''',
 }
 ```
-### 3、安装依赖
 
-- 进入项目目录创建虚拟环境，安装依赖
-```bash
-cd Desktop/www # 进入项目目录
-virtualenv venv # 创建虚拟环境
-source venv/bin/activate # 激活虚拟环境
-pip install -r requirements.txt # 安装依赖
-```
-[![](doc/install-packages.png)](doc/install-packages.png)
 
-### 4、创建数据库
+### 2、创建数据库
 
 ```bash
 python manage.py makemigrations
@@ -94,7 +61,7 @@ python manage.py migrate
 ```
 [![](doc/create-database.png)](doc/create-database.png)
 
-### 5、创建超级管理员账号
+### 3、创建超级管理员账号
 
 ```bash
 python manage.py createsuperuser
@@ -102,13 +69,13 @@ python manage.py createsuperuser
 依次输入用户名，邮箱，密码
 [![](doc/create-admin-user.png)](doc/create-admin-user.png)
 
-### 6、运行
+### 4、运行
 ```bash
 python manage.py runserver 127.0.0.1:9000
 ```
 运行上面代码，本地访问 127.0.0.1:9000 就能看到你的站点了。
 
-### 7、其他问题
+### 5、其他问题
 
 
 - 代码高亮：
