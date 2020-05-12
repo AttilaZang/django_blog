@@ -52,30 +52,33 @@ SITE_CONFIGS = {
 }
 ```
 
+### 2、创建虚拟环境并安装依赖包
+pip install pipenv
+pipenv install --deploy --ignore-pipfile 
 
-### 2、创建数据库
+### 3、创建数据库
 
 ```bash
-python manage.py makemigrations
-python manage.py migrate
+pipenv run python manage.py makemigrations
+pipenv run python manage.py migrate
 ```
 [![](doc/create-database.png)](doc/create-database.png)
 
-### 3、创建超级管理员账号
+### 4、创建超级管理员账号
 
 ```bash
-python manage.py createsuperuser
+pipenv run python manage.py createsuperuser
 ```
 依次输入用户名，邮箱，密码
 [![](doc/create-admin-user.png)](doc/create-admin-user.png)
 
-### 4、运行
+### 5、运行
 ```bash
-python manage.py runserver 127.0.0.1:9000
+pipenv run python manage.py runserver 127.0.0.1:9000
 ```
 运行上面代码，本地访问 127.0.0.1:9000 就能看到你的站点了。
 
-### 5、其他问题
+### 6、其他问题
 
 
 - 代码高亮：
@@ -90,6 +93,6 @@ python manage.py runserver 127.0.0.1:9000
 
 - 静态文件：
 
-路径 www/static 下存放的js、css、font，以及站点的logo等图片，logo等图片可以替换自己的；
+路径 static 下存放的js、css、font，以及站点的logo等图片，logo等图片可以替换自己的；
 
 
